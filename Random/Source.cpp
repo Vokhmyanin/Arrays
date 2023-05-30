@@ -19,8 +19,7 @@ void main()
 			system("CLS");
 		}
 	} while (maxRand <= minRand);
-/*	cout << "¬ведите минимально возможное случайное число: "; cin >> minRand;
-	cout << "¬ведите максимально возможное случайное число: "; cin >> maxRand;*/
+
 	if (maxRand < minRand)
 	{
 		int buffer = minRand;

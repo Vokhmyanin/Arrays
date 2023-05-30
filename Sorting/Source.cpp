@@ -1,9 +1,12 @@
 #include<iostream>
 using namespace std;
 #define tab "\t"
+//#define SORTING
+#define RANGE
 void main()
 {
 	setlocale(LC_ALL, "");
+#ifdef SORTING
 	const int n = 5;
 	int arr[n];
 	int minRand;
@@ -49,5 +52,18 @@ void main()
 		cout << arr[i] << tab;
 	}
 	cout << endl;
-	
+#endif
+#ifdef RANGE
+
+#endif
+	int range[5] = {};
+	for (int i = 0; i < 5; i++)
+	{
+		range[i] = 70 + rand() % 10;
+	}
+	for (int i = 0; i < 5; i++)
+	{
+		cout << range[i] << "\t";
+	}
+	cout << endl;
 }
